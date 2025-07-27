@@ -6,7 +6,7 @@ import entity.InterfaceIdentificador;
 import java.util.List;
 
 public class GenericService<T extends InterfaceIdentificador> {
-    protected GenericRepository<T> repository;
+    private final GenericRepository<T> repository;
 
     public GenericService(GenericRepository<T> repository) {
         this.repository = repository;
