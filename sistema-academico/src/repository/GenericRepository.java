@@ -1,11 +1,11 @@
 package repository;
 
-import entity.InterfaceIdentificador;
+import entity.IdentificadorInterface;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class GenericRepository<T extends InterfaceIdentificador> implements GenericInterface<T> {
+public class GenericRepository<T extends IdentificadorInterface> implements GenericInterface<T> {
     private final List<T> lista = new ArrayList<>();
     private Long proximoId = 1L;
 

@@ -1,6 +1,6 @@
 package entity;
 
-public interface InterfaceIdentificador {
+public interface IdentificadorInterface {
     Long getId();
     void setId(Long id);
 }

@@ -1,11 +1,11 @@
 package service;
 
 import repository.GenericRepository;
-import entity.InterfaceIdentificador;
+import entity.IdentificadorInterface;
 
 import java.util.List;
 
-public class GenericService<T extends InterfaceIdentificador> {
+public class GenericService<T extends IdentificadorInterface> {
     private final GenericRepository<T> repository;
 
     public GenericService(GenericRepository<T> repository) {

@@ -4,7 +4,7 @@ import entity.enums.StatusAluno;
 
 import java.util.Map;
 
-public class AlunoDisciplina implements InterfaceIdentificador {
+public class AlunoDisciplina implements IdentificadorInterface {
     private Long id;
     private Aluno aluno;
     private Disciplina disciplina;

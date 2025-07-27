@@ -1,10 +1,10 @@
 package repository;
 
-import entity.InterfaceIdentificador;
+import entity.IdentificadorInterface;
 
 import java.util.List;
 
-public interface GenericInterface<T extends InterfaceIdentificador> {
+public interface GenericInterface<T extends IdentificadorInterface> {
     void save(T obj);
 
     List<T> findAll();

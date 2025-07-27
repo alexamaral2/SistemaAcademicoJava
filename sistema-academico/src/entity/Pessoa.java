@@ -1,6 +1,6 @@
 package entity;
 
-public abstract class Pessoa implements InterfaceIdentificador{
+public abstract class Pessoa implements IdentificadorInterface {
     private Long id;
     private String nome;
     private String cpf;
