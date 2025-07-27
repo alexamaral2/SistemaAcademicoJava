@@ -1,9 +1,10 @@
 package entity;
 
-public abstract class Pessoa {
-    protected String nome;
-    protected String cpf;
-    protected String email;
+public abstract class Pessoa implements InterfaceIdentificador{
+    private Long id;
+    private String nome;
+    private String cpf;
+    private String email;
 
     public Pessoa() {}
 
@@ -11,6 +12,14 @@ public abstract class Pessoa {
         this.nome = nome;
         this.cpf = cpf;
         this.email = email;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getNome() {

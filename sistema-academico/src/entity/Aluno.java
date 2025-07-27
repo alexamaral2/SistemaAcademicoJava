@@ -12,9 +12,24 @@ public class Aluno extends Pessoa {
         this.matricula = matricula;
     }
 
+
+    public String getMatricula() {
+        return matricula;
+    }
+
+    public void setMatricula(String matricula) {
+        this.matricula = matricula;
+    }
+
     @Override
     public void exibirInformacoes() {
-        System.out.println("Aluno: " + nome);
+        System.out.println("===== Dados do Aluno =====");
+        System.out.println("ID: " + getId());
+        System.out.println("Nome: " + getNome());
+        System.out.println("Matrícula: " + getMatricula());
+        System.out.println("Email: " + getEmail());
+        System.out.println("CPF: " + getCpf());
+        System.out.println("==========================");
     }
 
 }

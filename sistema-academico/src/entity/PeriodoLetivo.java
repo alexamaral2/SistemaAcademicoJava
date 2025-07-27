@@ -1,6 +1,6 @@
 package entity;
 
-public class PeriodoLetivo {
+public class PeriodoLetivo implements InterfaceIdentificador {
     private Long id;
     private String anoLetivo;
 

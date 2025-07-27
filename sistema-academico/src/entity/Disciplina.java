@@ -1,6 +1,6 @@
 package entity;
 
-public class Disciplina {
+public class Disciplina implements InterfaceIdentificador {
     private Long id;
     private String nome;
     private Professor professor;

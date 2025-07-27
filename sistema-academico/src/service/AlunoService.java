@@ -3,20 +3,10 @@ package service;
 import entity.Aluno;
 import repository.AlunoRepository;
 
-import java.util.List;
-
-public class AlunoService {
-    private AlunoRepository alunoRepository;
+public class AlunoService extends GenericService<Aluno> {
 
     public AlunoService(AlunoRepository alunoRepository) {
-        this.alunoRepository = alunoRepository;
+        super(alunoRepository);
     }
 
-    public void CadastrarAluno(Aluno aluno) {
-        alunoRepository.save(aluno);
-    }
-
-    public List<Aluno> listarAlunos() {
-        return alunoRepository.findAll();
-    }
 }
